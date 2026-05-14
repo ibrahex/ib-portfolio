@@ -1,0 +1,81 @@
+.hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 100px 60px;
+}
+
+/* LEFT SIDE */
+.hero-text{
+  width: 100%;
+}
+
+.hero-text h1{
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.hero-text p{
+  font-size: 20px;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+.hero-text button{
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+   background: #8a878709;        /* 🔥 transparent */
+  color: var(--title);
+  border: 2px solid #8a878709 ;
+  border-radius: 40%;
+  cursor: pointer;
+
+  transition: all 0.3s ease;      /* smooth animation */
+}
+
+
+button:hover {
+  background-color: var(--subtitle);
+  color: white;
+  box-shadow: 0 0 10px var(--subtitle);
+}
+
+/* RIGHT SIDE */
+
+.glass-card{
+  
+  width: 550px;
+  padding: 20px;
+
+  background: var(--subtitleimpd);
+
+  border: 1px solid rgba(255,255,255,0.1);
+
+  backdrop-filter: blur(12px);
+
+  border-radius: 240px;
+
+  transition: 0.4s ease;
+
+  box-shadow: 0 0 20px rgba(255,255,255,0.05);
+}
+
+/* IMAGE */
+.glass-card img{
+  width: 100%;
+  border-radius: 18px;
+}
+
+/* HOVER EFFECT */
+.glass-card:hover{
+
+  transform: scale(0.95);
+
+  box-shadow:
+    0 0 20px rgba(255,255,255,0.2),
+    0 0 40px rgba(0,255,255,0.3);
+}

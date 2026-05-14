@@ -1,0 +1,96 @@
+
+ 
+header ul.flex {
+  background-color: #8a878709;
+  gap: 16px;
+  padding: 8px 18px;
+  border-radius: 50px; 
+}
+
+header ul li a {
+  color: var(--title);
+  position: relative;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+
+header ul li a:hover {
+  background-color: var(--subtitle);
+  color: white;
+  box-shadow: 0 0 10px var(--subtitle);
+}
+
+.menu-btn{
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: var(--title);
+  cursor: pointer;
+}
+
+@media (max-width: 900px){
+
+  /* إظهار زر الهامبرغر */
+  .menu-btn{
+    display: block;
+  }
+
+  /* إخفاء القائمة */
+  nav{
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    background: var(--primary);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  /* عند الضغط تظهر */
+  nav.show{
+    display: block;
+  }
+
+  /* القائمة عمودية */
+  header ul.flex{
+    flex-direction: column;
+  }
+
+}
+
+header button {
+  padding: 16px 16px;              /* better than fixed height */
+  background: #8a878709;        /* 🔥 transparent */
+  color: var(--title);
+  border: 2px solid #8a878709 ;
+  border-radius: 100%;
+  cursor: pointer;
+
+  transition: all 0.3s ease;      /* smooth animation */
+}
+
+header button:hover {
+  background-color: var(--subtitle);
+  color: white;
+  box-shadow: 0 0 10px var(--subtitle);
+}
+
+.dark-btn {
+  margin-left: 0,5%; 
+}
+
+.lang-btn{
+  margin-left: 30%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 10px 30px;
+   height: 40px;
+}
+
